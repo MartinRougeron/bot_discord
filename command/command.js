@@ -1,19 +1,19 @@
 module.exports = class command {
 
-	static parse (message) {
+	static parse(message) {
 		if (this.match(message)) {
 			this.action(message)
 			return true
 		} else {
-		return  false
+			return false
 		}
 	}
 
-	static match (msg) {
+	static match(msg) {
 		return false
-	} 
+	}
 
-	static action (msg) {
+	static action(msg) {
 
 	}
 }

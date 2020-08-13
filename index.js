@@ -17,11 +17,13 @@ bot.on('message', function (message) {
 	if (message.content === '!renaud') {
 		message.channel.send('ce gros pd')
 	}
-	if (message.content === pref + try) {
-		message.channel.send({embed: {
-			title: "total de msg envoyé",
-			description : "message total : " + userData
-		}})
+	if (message.content === pref + 'try') {
+		message.channel.send({
+			embed: {
+				title: "total de msg envoyé",
+				description: "message total : " + userData
+			}
+		})
 	}
 })
 
